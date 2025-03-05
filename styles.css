@@ -1,0 +1,154 @@
+body {
+    background-color: #2C2C54;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+h2 {
+    font-size: 35px;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/* Header Styles */
+
+header {
+    padding: 20px;
+    background-color: #443B6A;
+    box-shadow: 0 0 5px #000000;
+}
+
+
+/* Navigation Styles */
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Center the buttons */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    /* Further increased font size */
+    color: #FFFFFF;
+    padding: 15px 30px;
+    /* Further increased padding */
+    background-color: #443B6A;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5A4C9C;
+}
+
+
+/* Footer Styles */
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #443B6A;
+    font-size: 16px;
+}
+
+
+/* Content Box Styles */
+
+.content-box {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #443B6A;
+    box-shadow: 0 0 5px #000000;
+    border-radius: 5px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+
+/* HR Styles */
+
+hr {
+    border: none;
+    height: 5px;
+    background-color: #443B6A;
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+/* Resume Specific Styles */
+
+.paragraph {
+    width: 60%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #443b6a;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 10px;
+    color: #FFFFFF;
+    line-height: 1.8;
+}
+
+.centered {
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #443B6A;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 5px #000000;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: #5A4C9C;
+}
