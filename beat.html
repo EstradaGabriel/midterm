@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Beat - Music Collection</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 0 0 0;
+            background-color: #2C2C54;
+            font-family: "Montserrat", sans-serif;
+            min-height: 100vh;
+            color: #FFFFFF;
+        }
+        
+        .back-button {
+            display: inline-block;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: "Playfair Display", serif;
+            margin: 20px;
+            padding: 8px 16px;
+            border: 2px solid #FFFFFF;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background-color: #5A4C9C;
+            color: #FFFFFF;
+        }
+        
+        .media-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section-title {
+            color: #FFFFFF;
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .genre-container {
+            background-color: #443B6A;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .genre-title {
+            color: #FFFFFF;
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #FFFFFF;
+        }
+        
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .media-item {
+            background-color: #2C2C54;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .media-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .media-item audio {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 12px;
+            border-radius: 20px;
+        }
+        
+        .media-info {
+            padding: 10px;
+            background-color: rgba(68, 59, 106, 0.5);
+            border-radius: 8px;
+        }
+        
+        .media-info h3 {
+            color: #FFFFFF;
+            font-family: "Playfair Display", serif;
+            font-size: 18px;
+            margin: 0 0 5px 0;
+        }
+        
+        .media-info p {
+            color: #FFFFFF;
+            margin: 0;
+            font-size: 14px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="media-container">
+        <h1 class="section-title">My Beats!</h1>
+        <div class="genre-container">
+            <h2 class="genre-title">Oldies!</h2>
+            <div class="media-grid">
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/The Only One.mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>The Only One</h3>
+                        <p>Artist: Lionel Richie</p>
+                    </div>
+                </article>
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/Through The Years.mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>Through teh Years</h3>
+                        <p>Artist: Kenny Rogers</p>
+                    </div>
+                </article>
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/Say You Love Me, One More Time.mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>Say You Love Me, One More Time</h3>
+                        <p>Artist: D.J. Rogers</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="genre-container">
+            <h2 class="genre-title">Kena & Miyuki Covers!</h2>
+            <div class="media-grid">
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/BINI - 'Salamin, Salamin (Japanese Version) kena & miyuki(1).mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>Salamin, Salamin (Japanese Version)</h3>
+                        <p>Artist: kena & miyuki</p>
+                    </div>
+                </article>
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/Moonstar88 - Migraine (Japanese Version) kena & miyuki.mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>Migraine (Japanese Version)</h3>
+                        <p>Artist: kena & miyuki</p>
+                    </div>
+                </article>
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/Kahit Ayaw Mo Na - This Band (Japanese Version日本語カバー) Kena Yokie & miyuki.mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>Kahit Ayaw Mo Na (Japanese Version)</h3>
+                        <p>Artist: kena & miyuki</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="genre-container">
+            <h2 class="genre-title">Ppop!</h2>
+            <div class="media-grid">
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/Lola Amour Maybe Maybe (Official Lyric Video).mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>Maybe Maybe</h3>
+                        <p>Artist: Lola Amour</p>
+                    </div>
+                </article>
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/Fallen.mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>Fallen</h3>
+                        <p>Artist: Lola Amour</p>
+                    </div>
+                </article>
+                <article class="media-item">
+                    <audio controls>
+                        <source src="audio/Salamin, Salamin by BINI (Y2K RnB Full Version).mp3" type="audio/mpeg" />
+                    </audio>
+                    <div class="media-info">
+                        <h3>Salamin, Salamin Rnb</h3>
+                        <p>Artist: Jopper Ril</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            width: 18%;
+            margin: 10px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #000000;
+        }
+        
+        .gallery-item .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .gallery-item:hover .description {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <hr>
+        <h1>Photo Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Images/img1.jpg" alt="Description 1">
+                <div class="description">Description 1</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img2.jpg" alt="Description 2">
+                <div class="description">Description 2</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img3.jpg" alt="Description 3">
+                <div class="description">Description 3</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img4.jpg" alt="Description 4">
+                <div class="description">Description 4</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img5.jpg" alt="Description 5">
+                <div class="description">Description 5</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img6.jpg" alt="Description 6">
+                <div class="description">Description 6</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img7.jpg" alt="Description 7">
+                <div class="description">Description 7</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img8.jpg" alt="Description 8">
+                <div class="description">Description 8</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img9.jpg" alt="Description 9">
+                <div class="description">Description 9</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Images/img10.jpg" alt="Description 10">
+                <div class="description">Description 10</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
