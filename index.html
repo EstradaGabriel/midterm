@@ -6,29 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar {
+            background-color: #443B6A;
+            box-shadow: 0 0 5px #000000;
+            overflow: hidden;
+            width: 100%;
+        }
+        /* Added missing closing curly brace */
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: background-color 0.3s;
+        }
+        
+        .navbar a:hover {
+            background-color: #5A4C9C;
+        }
+        
+        .navbar a.active {
+            background-color: #5A4C9C;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 28px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 15px 30px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #5A4C9C;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #443B6A;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .video-section {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px auto;
+            width: 80%;
+        }
+        
+        .video-section iframe {
+            width: 50%;
+            margin-right: 20px;
+        }
+        
+        .video-section .intro-text {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="bio.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Gallery</a>
+        <a href="beat.html">My Beat</a>
+        <a href="film.html">My Movies</a>
+        <a href="tv_shows.html">My TV Shows</a>
+        <a href="#dreamplaces">Dream Places</a>
+        <a href="#bucketlist">Bucket List</a>
+        <a href="#contact">Contact</a>
+    </div>
+
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my biography, skills, and resume.</p>
+        <h1>GABRIEL WAYNE C. ESTRADA</h1>
+        <p>Explore my personal Website!</p>
     </header>
-    <nav style="text-align: center;">
-        <ul>
-            <li><a href="bio.html">Biography</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="photogallery.html">Photo Gallery</a></li>
-            <li><a href="beat.html">My Beat</a></li>
-            <li><a href="film.html">Film</a></li>
-        </ul>
-    </nav>
+
+    <div class="video-section">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/kNr8IKylT-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="intro-text">
+            <p>Welcome to my Portfolio! This website provides an overview of my journey, showcasing my skills, experiences, and aspirations. Feel free to explore the rest of the site to learn more about me!.</p>
+        </div>
+    </div>
+
     <footer>
     </footer>
-
-    <div style="text-align: center; margin-top: 20px;">
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/kNr8IKylT-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
 
 </body>
 

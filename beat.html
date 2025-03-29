@@ -114,10 +114,49 @@
             font-size: 14px;
             font-style: italic;
         }
+        
+        .navbar {
+            background-color: #443B6A;
+            box-shadow: 0 0 5px #000000;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: background-color 0.3s;
+        }
+        
+        .navbar a:hover {
+            background-color: #5A4C9C;
+        }
+        
+        .navbar a.active {
+            background-color: #5A4C9C;
+        }
     </style>
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="bio.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Gallery</a>
+        <a href="beat.html">My Beat</a>
+        <a href="film.html">My Movies</a>
+        <a href="tv_shows.html">My TV Shows</a>
+        <a href="#dreamplaces">Dream Places</a>
+        <a href="#bucketlist">Bucket List</a>
+        <a href="#contact">Contact</a>
+    </div>
     <main class="media-container">
         <h1 class="section-title">My Beats!</h1>
         <div class="genre-container">
