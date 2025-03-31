@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tales: A Vision Board for Future Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #2C2C54;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background: linear-gradient(90deg, #443B6A, #5A4C9C);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 5px 0;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+            margin: 2px;
+        }
+        
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .navbar a.active {
+            background-color: #FFFFFF;
+            color: #443B6A;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+        
+        .paragraphdiv {
+            width: 75%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #443B6A;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            line-height: 1.6;
+        }
+        
+        .vision-board {
+            margin: 20px auto;
+            max-width: 90%;
+        }
+        
+        hr {
+            border: none;
+            height: 5px;
+            background-color: #4874DF;
+            width: 90%;
+            margin: 2px auto;
+        }
+        
+        h1 {
+            color: #FFFFFF;
+            font-family: "Playfair Display", serif;
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        
+        nav {
+            width: 30%;
+            margin: 20px auto;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #5d3130;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="bio.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Gallery</a>
+        <a href="beat.html">My Beat</a>
+        <a href="film.html">My Movies</a>
+        <a href="tv_shows.html">My TV Shows</a>
+        <a href="dreamplace.html" class="active">Dream Places</a>
+        <a href="#bucketlist">Bucket List</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div align="center">
+        <hr>
+        <h1>Travel Tales: A Vision Board for Future Adventures</h1>
+        <hr>
+    </div>
+    <div class="paragraphdiv">
+        <p>This <i>vision board</i> represents a yearning for global exploration, a collection of destinations that promise to awaken the senses and broaden perspectives. It's a journey through diverse cultures, from the serene beauty of ancient traditions
+            to the vibrant energy of bustling cityscapes. Each location holds the promise of unique experiences, from historical immersion and architectural wonders to the warmth of local hospitality and the thrill of discovering new rhythms and flavors.
+            This board is a roadmap to adventure, a visual manifestation of a desire to connect with the world's rich tapestry of life. <b>Click on the polaroid pictures to explore the places I long to visit.</b></p>
+    </div>
+    <div class="vision-board">
+        <img src="places/DreamPlaces.png" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" alt="hawaii" title="hawaii" href="places\hawaii.html" coords="516,287,213,29" shape="rect">
+            <area target="" alt="tokyo" title="tokyo" href="places\japan.html" coords="954,41,1168,320" shape="rect">
+            <area target="" alt="germany" title="germany" href="places\germany.html" coords="442,527,696,505,715,748,460,780" shape="poly">
+            <area target="" alt="italy" title="italy" href="places\Italy.html" coords="1471,595,171" shape="circle">
+        </map>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house fa-sm" style="color: #5d3130;"></i> HOME</a></li>
+            <li><a href="#home"><i class="fa-solid fa-arrow-up fa-sm" style="color: #5d3130;"></i> GO TO TOP</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
